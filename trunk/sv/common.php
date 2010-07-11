@@ -13,7 +13,7 @@
 * Translators: Swedish translation team, working at http://www.phpbb-se.com contact translation team leader at peetra.mammapappa@gmail.com
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
-* Copyright (c) 2006-2010 Swedish translation team
+* Copyright (c) 2006-2010 Swedish translation team 
 *
 * The Swedish language package for phpBB 3.0.x is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License as published by the Free Software
