@@ -53,7 +53,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'CAPTCHA_QA'				=> 'Q&amp;A CAPTCHA',
-	'CONFIRM_QUESTION_EXPLAIN'	=> 'Den här frågan är till för att indentifiera och förebygga automatiska registreringar.',
+	'CONFIRM_QUESTION_EXPLAIN'	=> 'Den här frågan är till för att identifiera och förebygga automatiska registreringar.',
 	'CONFIRM_QUESTION_WRONG'	=> 'Du har tillhandahållit ett felaktigt svar på bekräftelsefrågan.',
 
 	'QUESTION_ANSWERS'			=> 'Svar',
