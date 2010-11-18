@@ -62,12 +62,8 @@ $lang = array_merge($lang, array(
 	'DEFAULT_STYLE'					=> 'Standardstil',
 	'DISABLE_BOARD'					=> 'Inaktivera forumet',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Detta kommer att göra forumet otillgängligt för användarna. Du kan också ange ett kort meddelande (255 tecken) som ska visas om du vill.',
-	'OVERRIDE_STYLE'				=> 'Åsidosätt användarstil',
-	'OVERRIDE_STYLE_EXPLAIN'		=> 'Ersätter användarens stil med standardstilen.',
-	'SITE_DESC'						=> 'Webbplatsbeskrivning',
-	'SITE_NAME'						=> 'Webbplatsnamn',
-	'SYSTEM_DST'					=> 'Aktivera sommartid/<abbr title="Daylight Saving Time">DST</abbr>',
-	'SYSTEM_TIMEZONE'				=> 'Systemets tidszon',
+	'SYSTEM_TIMEZONE'            => 'Tidszon för gäster',
+	'SYSTEM_TIMEZONE_EXPLAIN'         => 'Den tidszon, som används för användare som inte är inloggade (gäster och robotar) Inloggade användare anger sin tidszon vid registrering och kan ändra på den in sin kontrollpanel.',
 	'WARNINGS_EXPIRE'				=> 'Varningslängd',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Antal dagar som ska förflyta innan varningen automatiskt förfaller från användarens register.',
 ));
@@ -91,7 +87,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_PM_REPORT'			=> 'Tillåt användarna att rapportera pm',
 	'ALLOW_PM_REPORT_EXPLAIN'	=> 'Om aktiverat, så har användarna möjligheten att rapportera ett privat meddelande, som de har fått eller sänt. Dessa meddelanden kommer sedan att vara synliga i moderationspanelen.',
 	'ALLOW_QUICK_REPLY'			=> 'Tillåter snabbsvar',
-	'ALLOW_QUICK_REPLY_EXPLAIN'	=> 'Denna inställning tillåter anbbsavar att inaktiveras globalt. Om aktiverat, så ska kategorierna ha snabbsvar aktiverat för att det ska fungera.',
+	'ALLOW_QUICK_REPLY_EXPLAIN'	=> 'Denna inställning tillåter snabbsvar att inaktiveras globalt. Om aktiverat, så ska kategorierna ha snabbsvar aktiverat för att det ska fungera.',
 	'ALLOW_QUICK_REPLY_BUTTON'	=> 'Spara och tillåt snabbsvar för alla kategorier',
 
 	'ALLOW_SIG'					=> 'Tillåt signaturer',
@@ -104,7 +100,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_SMILIES'				=> 'Tillåt smilies',
 	'ALLOW_TOPIC_NOTIFY'		=> 'Tillåt trådbevakning',
 	'BOARD_PM'					=> 'Personliga meddelanden',
-	'BOARD_PM_EXPLAIN'			=> 'Aktivera eller inaktivera personliga meddelanden för alla användare.',
+	'BOARD_PM_EXPLAIN'			=> 'Aktivera personliga meddelanden för alla användare.',
 ));
 
 // Avatar Settings
@@ -232,7 +228,7 @@ $lang = array_merge($lang, array(
 	'NEW_MEMBER_POST_LIMIT'			=> 'Inläggsgräns för ny medlem',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Nya medlemmar läggs automatiskt i den fördefinierade gruppen <em>Nya medlemmar</em> tills de uppnår denna mängd inlägg. Du kan använda denna grupp för att förhindra användning av pm eller granska inlägg före de blir postade i forumet. <strong>Sätt till 0 för att inaktivera detta beteende.</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Ange gruppen Nya medlemmar som standard',
-	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> 'Aktivera detta och definiera antal inlägg för gruppen Nya medlemmar för att lägga in nya medlemmar i gruppen Nya medlemmar och ange den gruppen som deras standardgrupp. Detta kan vara behändigt om man vill ange en grupptitel eller visningsbild för nya medlemmar.',
+	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> 'Aktivera detta och definiera antal inlägg för gruppen <em>Nya medlemmar</em>, för att lägga in nya medlemmar i gruppen <em>Nya medlemmar</em> och ange den gruppen som deras standardgrupp. Detta kan vara behändigt om man vill ange en grupptitel eller visningsbild för nya medlemmar.',
 	'ACC_ADMIN'					=> 'Av administratör',
 	'ACC_DISABLE'				=> 'Inaktivera',
 	'ACC_NONE'					=> 'Ingen',
@@ -252,7 +248,7 @@ $lang = array_merge($lang, array(
 	'PASSWORD_LENGTH'			=> 'Lösenordslängd',
 	'PASSWORD_LENGTH_EXPLAIN'	=> 'Minsta och maximala antalet tecken i lösenord.',
 	'REG_LIMIT'					=> 'Registreringsförsök',
-	'REG_LIMIT_EXPLAIN'			=> 'Antal försök användare kan göra med verifieringskoden innan de låses ute för den aktuella sessionen.',
+	'REG_LIMIT_EXPLAIN'			=> 'Antal gånger användare kan göra uppgiften, som hindrar spamregistreringar, före användarens aktiva session låses.',
 	'USERNAME_ALPHA_ONLY'		=> 'Endast alfanumeriska',
 	'USERNAME_ALPHA_SPACERS'	=> 'Alfanumeriska och mellanrum',
 	'USERNAME_ASCII'			=> 'ASCII (ingen internationell unicode)',
@@ -306,14 +302,13 @@ $lang = array_merge($lang, array(
  
 ));
 // Visual Confirmation Settings
-$lang = array_merge($lang, array(
 
-	'ACP_VC_SETTINGS_EXPLAIN'				=> 'Här kan du välja och ställa in inställningar för <abbr title="Completely Automated Public Turing-test to tell Computers and Humans Apart">CAPTCHA</abbr> tillägg. Dessa tillägg innehåller flera olika sätt att avslå registreringar av sk. spambots. ',
+	'ACP_VC_SETTINGS_EXPLAIN'            => 'Här kan du välja och ställa in inställningar för  tillägg som är designade att blockera robotregistreringar på forumet. Dessa tillägg fungerar genom att utmana användaren med en uppgift, som datorer inte kan lösa, t.ex <abbr title="Completely Automated Public Turing-test to tell Computers and Humans Apart">CAPTCHA</abbr>-uppgifter. ',
 	'AVAILABLE_CAPTCHAS'					=> 'Tillgängliga tillägg',
 	'CAPTCHA_UNAVAILABLE'					=> 'CAPTCHAn kan inte väljas, då dess krav inte uppfylls.',
-	'CAPTCHA_GD'							=> 'GD CAPTCHA',
-	'CAPTCHA_GD_3D'							=> 'GD 3D Captcha',
-	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'GD CAPTCHA förgrundsbrus',
+	'CAPTCHA_GD'							=> 'GD bild',
+	'CAPTCHA_GD_3D'							=> 'GD 3D bild',
+	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'Förgrundsbrus',
 	'CAPTCHA_GD_EXPLAIN'					=> 'Använd GD för att skapa en mer avancerad CAPTCHA.',
 	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Använd förgrundsbrus för att göra den GD-baserade CAPTCHAn svårare.',
 	'CAPTCHA_GD_X_GRID'						=> 'GD CAPTCHA bakgrundsbrus x-axel',
