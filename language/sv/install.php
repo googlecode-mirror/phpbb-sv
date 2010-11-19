@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* install [Swedish] (phpBB 3.0.7)
+* install [Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
@@ -144,7 +144,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Fel under utförande av <var>query_first</var>, %s (“%s”).',
 	'DB_ERR_SELECT'				=> 'Fel under körning av <code>SELECT</code> fråga.',
 	'DB_HOST'					=> 'Värdnamn för databasserver eller DSN',
-	'DB_HOST_EXPLAIN'			=> 'DSN står för Data Source Name och är endast relevant för ODBC installationer.',
+	'DB_HOST_EXPLAIN'			=> 'DSN står för Data Source Name och är endast relevant för ODBC installationer. För PostgreSQL; Använd localhost för att ansluta till den lokala servern via UNIX use  to connect to the local server med UNIX domain socket och 127.0.0.1 för att ansluta med TCP.',
 	'DB_NAME'					=> 'Databasnamn',
 	'DB_PASSWORD'				=> 'Databaslösenord',
 	'DB_PORT'					=> 'Databasserverport',
@@ -181,7 +181,7 @@ $lang = array_merge($lang, array(
 	'FILES_OPTIONAL'			=> 'Frivilliga filer och kataloger',
 	'FILES_OPTIONAL_EXPLAIN'	=> '<strong>Frivilligt</strong> - Dessa filer, kataloger eller behörighetsinställningar är inte obligatoriska. Installationssystemet kommer att försöka använda olika tekniker för att skapa dessa om dem inte finns eller inte kan skrivas till. Dock kommer installationen snabbas upp om dessa redan finns.',
 	'FILES_REQUIRED'			=> 'Filer och kataloger',
-	'FILES_REQUIRED_EXPLAIN'	=> '<strong>Obligatoriskt</strong> - För att phpBB ska fungera korrekt så måste phpBB kunna komma åt eller skriva till vissa filer eller kataloger. Om du ser “Hittas inte” nedan så måste du skapa den relevanta filen eller katalogen. Om du ser “Ej skrivbar” nedan så måste du ändra behörigheterna på filen eller katalogen så att phpBB kan skriva till den.',
+	'FILES_REQUIRED_EXPLAIN'	=> '<strong>Obligatoriskt</strong> - För att phpBB ska fungera korrekt så måste phpBB kunna komma åt eller skriva till vissa filer och kataloger. Om du ser “Hittas inte” nedan så måste du skapa den relevanta filen eller katalogen. Om du ser “Ej skrivbar” nedan så måste du ändra behörigheterna på filen eller katalogen så att phpBB kan skriva till den.',
 	'FILLING_TABLE'				=> 'Fyller tabell <strong>%s</strong>',
 	'FILLING_TABLES'			=> 'Fyller tabeller',
 	'FIREBIRD_DBMS_UPDATE_REQUIRED'		=> 'phpBB stöder inte längre tidigare versioner av Firebird/Interbase än 2.1. Var god uppdatera din Firebird till version 2.1.0. före du fortsätter din uppdatering av phpBB3',
@@ -221,11 +221,12 @@ $lang = array_merge($lang, array(
 
 	<p>phpBB3 stödjer följande databaser:</p>
 	<ul>
-		<li>MySQL 3.23 eller högre (MySQLi stöds)</li>
+		<li>MySQL 3.23 eller nyare (MySQLi stöds)</li>
 		<li>PostgreSQL 7.3+</li>
 		<li>SQLite 2.8.2+</li>
 		<li>Firebird 2.1+</li>
-		<li>MS SQL Server 2000 eller högre (direkt eller via ODBC)</li>
+		<li>MS SQL Server 2000 eller nyare (direkt eller via ODBC)</li>
+		<li>MS SQL Server 2005 eller nyare (native)</li>
 		<li>Oracle</li>
 	</ul>
 
@@ -559,6 +560,7 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> 'Uppdaterar data',
 	'UPDATING_TO_LATEST_STABLE'		=> 'Uppdaterar databasen till senaste versionen',
 	'UPDATED_VERSION'				=> 'Uppdaterad version',
+	'UPGRADE_INSTRUCTIONS'         => 'En version <strong>%1$s</strong med nya funktioner är tillgänglig. Läs <a href="%2$s" title="%2$s"><strong>Anslaget om utgåvan</strong></a> för att lära dig mera om de nya funktionerna och hur du ska uppdatera ditt forum.',
 	'UPLOAD_METHOD'					=> 'Uppladdningsmetod',
 	'UPDATE_DB_SUCCESS'				=> 'Databasen har uppdaterats.',
 	'USER_ACTIVE'					=> 'Aktiv användare',
@@ -578,21 +580,6 @@ $lang = array_merge($lang, array(
 
 // Default database schema entries...
 $lang = array_merge($lang, array(
-	'CONFIG_BOARD_EMAIL_SIG'		=> 'Hälsningar forumledningen',
-	'CONFIG_SITE_DESC'				=> 'En kort text som beskriver ditt forum',
-	'CONFIG_SITENAME'				=> 'dindomän.com',
-
-	'DEFAULT_INSTALL_POST'			=> 'Detta är ett exempelinlägg i din installation av phpBB3. Allting verkar fungera. Du kan ta bort detta inlägg om du vill och fortsätta konfigurera ditt forum. Under installationen så skapades din första huvudkategori och kategori och tilldelades en lämplig uppsättning behörigheter för de fördefinierade användargrupperna administratörer, robotar, globala moderatorer, gäster, registrerade användare och registrerade COPPA-användare. Om du väljer att ta bort din första huvudkategori och din första kategori, glöm inte att tilldela behörigheter till alla dessa användargrupper för alla nya huvudkategorier och kategorier du skapar. Det är rekommenderat att byta namn på din första huvudkategori och din första kategori och kopiera behörigheter från dessa när du skapar nya huvudkategorier och kategorier. Ha det så roligt!',
-
-	'EXT_GROUP_ARCHIVES'			=> 'Arkiv',
-	'EXT_GROUP_DOCUMENTS'			=> 'Dokument',
-	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Nerladdningsbara filer',
-	'EXT_GROUP_FLASH_FILES'			=> 'Flash-filer',
-	'EXT_GROUP_IMAGES'				=> 'Bilder',
-	'EXT_GROUP_PLAIN_TEXT'			=> 'Oformaterad text',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Media',
-	'EXT_GROUP_REAL_MEDIA'			=> 'Real Media',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
 
 	'FORUMS_FIRST_CATEGORY'			=> 'Din första huvudkategori',
 	'FORUMS_TEST_FORUM_DESC'		=> 'Beskrivning av din första kategori.',
