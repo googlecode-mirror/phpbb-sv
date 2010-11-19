@@ -1,14 +1,14 @@
 <?php
 /**
 *
-* acp_board [Swedish] (phpBB 3.0.7)
+* acp_board [Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
 * @copyright (c) 2006 phpBB Group, modified and translated by Swedish translation team
 * @source file is copyright (c) 2005 phpBB Group, modified and translated by Swedish translation team
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-* @author (c) 2006-2008 Jonathan Gulbrandsen, 2008-2009 Peetra
+* @author (c) 2006-2008 Jonathan Gulbrandsen, 2008-2010 Peetra
 * Translators: Swedish translation team, working at http://www.phpbb-se.com Contact team leader at peetra.mammapappa@gmail.com
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
@@ -63,7 +63,7 @@ $lang = array_merge($lang, array(
 	'DISABLE_BOARD'					=> 'Inaktivera forumet',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Detta kommer att göra forumet otillgängligt för användarna. Du kan också ange ett kort meddelande (255 tecken) som ska visas om du vill.',
 	'SYSTEM_TIMEZONE'            => 'Tidszon för gäster',
-	'SYSTEM_TIMEZONE_EXPLAIN'         => 'Den tidszon, som används för användare som inte är inloggade (gäster och robotar) Inloggade användare anger sin tidszon vid registrering och kan ändra på den in sin kontrollpanel.',
+	'SYSTEM_TIMEZONE_EXPLAIN'         => 'Den tidszon, som används för besökare som inte är inloggade (gäster och robotar). Inloggade användare anger sin tidszon i samband med registrering och kan ändra på den i sin kontrollpanel.',
 	'WARNINGS_EXPIRE'				=> 'Varningslängd',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> 'Antal dagar som ska förflyta innan varningen automatiskt förfaller från användarens register.',
 ));
@@ -248,7 +248,7 @@ $lang = array_merge($lang, array(
 	'PASSWORD_LENGTH'			=> 'Lösenordslängd',
 	'PASSWORD_LENGTH_EXPLAIN'	=> 'Minsta och maximala antalet tecken i lösenord.',
 	'REG_LIMIT'					=> 'Registreringsförsök',
-	'REG_LIMIT_EXPLAIN'			=> 'Antal gånger användare kan göra uppgiften, som hindrar spamregistreringar, före användarens aktiva session låses.',
+	'REG_LIMIT_EXPLAIN'         => 'Antal gånger användare kan misslyckas med att tolka verifieringsuppgiften vid registrering, innan sessionen låses för ytterligare försök.',
 	'USERNAME_ALPHA_ONLY'		=> 'Endast alfanumeriska',
 	'USERNAME_ALPHA_SPACERS'	=> 'Alfanumeriska och mellanrum',
 	'USERNAME_ASCII'			=> 'ASCII (ingen internationell unicode)',
@@ -302,8 +302,8 @@ $lang = array_merge($lang, array(
  
 ));
 // Visual Confirmation Settings
-
-	'ACP_VC_SETTINGS_EXPLAIN'            => 'Här kan du välja och ställa in inställningar för  tillägg som är designade att blockera robotregistreringar på forumet. Dessa tillägg fungerar genom att utmana användaren med en uppgift, som datorer inte kan lösa, t.ex <abbr title="Completely Automated Public Turing-test to tell Computers and Humans Apart">CAPTCHA</abbr>-uppgifter. ',
+$lang = array_merge($lang, array(
+	'ACP_VC_SETTINGS_EXPLAIN'            => 'Här kan du göra inställningar för tillägg som är designade att blockera robotregistreringar på forumet. Tilläggen ger den som vill registrera sig en uppgift, som datorer i bästa fall inte kan lösa, t.ex <abbr title="Completely Automated Public Turing-test to tell Computers and Humans Apart">CAPTCHA</abbr>-uppgifter.',
 	'AVAILABLE_CAPTCHAS'					=> 'Tillgängliga tillägg',
 	'CAPTCHA_UNAVAILABLE'					=> 'CAPTCHAn kan inte väljas, då dess krav inte uppfylls.',
 	'CAPTCHA_GD'							=> 'GD bild',
