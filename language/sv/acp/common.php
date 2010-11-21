@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp common [Swedish] (phpBB 3.0.7)
+* acp common [Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
@@ -204,8 +204,8 @@ $lang = array_merge($lang, array(
 	'ACP_USER_SECURITY'				=> 'Användarsäkerhet',
 	'ACP_USER_SIG'					=> 'Signatur',
 	'ACP_USER_WARNINGS'				=> 'Varningar',
-	'ACP_VC_SETTINGS'					=> 'Inställningar för CAPTCHA',
-	'ACP_VC_CAPTCHA_DISPLAY'			=> 'Förhandsvisning av CAPTCHA-bild',
+	'ACP_VC_SETTINGS'					=> 'åtgärder mot spambotar',
+	'ACP_VC_CAPTCHA_DISPLAY'			=> 'Förhandsvisning av antispam-bild',
 	'ACP_VERSION_CHECK'					=> 'Kolla efter uppdateringar',
 	'ACP_VIEW_ADMIN_PERMISSIONS'		=> 'Visa administrativa behörigheter',
 	'ACP_VIEW_FORUM_MOD_PERMISSIONS'	=> 'Visa kategorimoderationsbehörigheter',
@@ -514,7 +514,7 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_SERVER'			=> '<strong>Ändrade serverinställningar</strong>',
 	'LOG_CONFIG_SETTINGS'		=> '<strong>Ändrade foruminställningar</strong>',
 	'LOG_CONFIG_SIGNATURE'		=> '<strong>Ändrade signaturinställningar</strong>',
-	'LOG_CONFIG_VISUAL'			=> '<strong>Ändrade inställningar för visuell bekräftelse</strong>',
+	'LOG_CONFIG_VISUAL'			=> '<strong>Ändrade inställningar för antispam-uppgift</strong>',
 
 	'LOG_APPROVE_TOPIC'			=> '<strong>Godkände tråd</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>Användare knuffade upp tråd</strong><br />» %s',
