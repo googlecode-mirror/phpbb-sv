@@ -58,6 +58,7 @@ $lang = array_merge($lang, array(
 
  	'BAN_ALREADY_ENTERED'	=> 'Bannlysningen hade redan införts sen tidigare. Bannlysningslistan uppdaterades inte.',
 	'BAN_SUCCESSFUL'		=> 'Bannlysningen infördes.',
+    'CANNOT_BAN_ANONYMOUS'  => 'Du kan inte bannlysa det anonyma kontot. Behörigheter för anonyma användare kan ställas in under Behörighetsfliken.',
 
 	'CANNOT_BAN_FOUNDER'			=> 'Du kan inte bannlysa grundare.',
 	'CANNOT_BAN_YOURSELF'			=> 'Du kan inte bannlysa dig själv.',
