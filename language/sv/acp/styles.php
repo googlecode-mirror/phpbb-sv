@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* acp_styles [Swedish] (phpBB 3.0.7)
+* acp_styles [Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
@@ -93,13 +93,13 @@ $lang = array_merge($lang, array(
 	'DEACTIVATE_DEFAULT'		=> 'Du kan inte inaktivera standardstilen.',
 	'DELETE_FROM_FS'			=> 'Ta bort från filsystemet',
 	'DELETE_IMAGESET'			=> 'Ta bort bildpaket',
-	'DELETE_IMAGESET_EXPLAIN'	=> 'Här kan du ta bort det valda bildpaketet från databasen. Du kan också ta bort det från filsystemet om du vill och har behörighet. Kom ihåg att det inte går att ångra. När bildpaketet har raderats är det borta för alltid. Det är rekommenderat att du först exporterar ditt bildpaket för möjlig framtida användning.',
+	'DELETE_IMAGESET_EXPLAIN'	=> 'Här kan du ta bort det valda bildpaketet från databasen. Kom ihåg att det inte går att ångra. När bildpaketet har raderats är det borta för alltid. Det är rekommenderat att du först exporterar ditt bildpaket för möjlig framtida användning.',
 	'DELETE_STYLE'				=> 'Ta bort stil',
-	'DELETE_STYLE_EXPLAIN'		=> 'Här kan du ta bort den valda stilen. Du kan inte ta bort alla stilelement härifrån. De måste tas bort individuellt från deras respektive formulär. Var försiktig när du tar bort stilar, det går inte att ångra.',
+	'DELETE_STYLE_EXPLAIN'		=> 'Här kan du ta bort den valda stilen. Du kan inte ta bort alla stilelement härifrån. De måste tas bort individuellt från filsystemet. Var försiktig när du tar bort stilar, det går inte att ångra.',
 	'DELETE_TEMPLATE'			=> 'Ta bort mall',
-	'DELETE_TEMPLATE_EXPLAIN'	=> 'Här kan du ta bort den valda malluppsättningen från databasen. Du kan också ta bort den från filsystemet om du vill och har behörighet. Kom ihåg att det inte går att ångra. När mallarna raderats är de borta för alltid. Det är rekommenderat att du först exporterar din malluppsättning för möjlig framtida användning.',
+	'DELETE_TEMPLATE_EXPLAIN'	=> 'Här kan du ta bort den valda malluppsättningen från databasen. Kom ihåg att det inte går att ångra. När mallarna raderats är de borta för alltid. Det är rekommenderat att du först exporterar din malluppsättning för möjlig framtida användning.',
 	'DELETE_THEME'				=> 'Ta bort tema',
-	'DELETE_THEME_EXPLAIN'		=> 'Här kan du ta bort det valda temat från databasen. Du kan också ta bort det från filsystemet om du vill och har behörighet. Kom ihåg att det inte går att ångra. När temat raderats är det borta för alltid. Det är rekommenderat att du först exporterar ditt tema för möjlig framtida användning.',
+	'DELETE_THEME_EXPLAIN'		=> 'Här kan du ta bort det valda temat från databasen. Kom ihåg att det inte går att ångra. När temat raderats är det borta för alltid. Det är rekommenderat att du först exporterar ditt tema för möjlig framtida användning.',
 	'DETAILS'					=> 'Detaljer',
 	'DIMENSIONS_EXPLAIN'		=> 'Om du väljer ja här så kommer höjd/bredd-parametrar att inkluderas.',
 

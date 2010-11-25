@@ -76,6 +76,8 @@ $lang = array_merge($lang, array(
 	'FULLTEXT_MYSQL_PCRE'					=> 'Stöd för icke-latinska UTF-8 tecken genom PCRE:',
 	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Om PCRE inte har unicode teckenegenskaper så kommer söksystemet att försöka använda mbstrings regular expression motor.',
 	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Detta söksystem kräver PCRE unicode teckenegenskaper, som endast finns tillgängligt i PHP 4.4, 5.1 och senare, om du vill söka efter icke-latinska tecken.',
+	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'   => 'Ord med minst så här många tecken kommer att indexeras som sökbara. Du eller din värd kan ändra detta enbart genom att ändra på MySQL-konfigurationen.',
+	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'   => 'Maximalt antal tecken i ord som indexeras som sökbara. Du eller din värd kan ändra detta enbart genom att ändra på MySQL-konfigurationen.',
 
 	'GENERAL_SEARCH_SETTINGS'				=> 'Allmänna sökinställningar',
 	'GO_TO_SEARCH_INDEX'					=> 'Gå till sökindexsidan',
