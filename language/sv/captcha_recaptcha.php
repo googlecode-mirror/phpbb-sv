@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* capcha_recaptcha[Swedish] (phpBB 3.0.7)
+* capcha_recaptcha[Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
