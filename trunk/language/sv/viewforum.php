@@ -51,20 +51,31 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACTIVE_TOPICS'			=> 'Aktiva trådar',
 	'ANNOUNCEMENTS'			=> 'Anslag',
+
 	'FORUM_PERMISSIONS'		=> 'Kategoribehörigheter',
+
 	'ICON_ANNOUNCEMENT'		=> 'Anslag',
 	'ICON_STICKY'			=> 'Notis',
+
 	'LOGIN_NOTIFY_FORUM'	=> 'Du har underrättats om denna kategori, logga in för att visa den.',
+
 	'MARK_TOPICS_READ'		=> 'Markera alla trådar som lästa',
+
 	'NEW_POSTS_HOT'			=> 'Nya inlägg [ Populär ]', // Not used anymore
 	'NEW_POSTS_LOCKED'		=> 'Nya inlägg [ Låst ]', // Not used anymore
 	'NO_NEW_POSTS_HOT'		=> 'Inga nya inlägg [ Populär ]', // Not used anymore
 	'NO_NEW_POSTS_LOCKED'	=> 'Inga nya inlägg [ Låst ]', // Not used anymore
 	'NO_READ_ACCESS'		=> 'Du har inte behörighet att läsa trådar i denna kategori.',
-	'POST_FORUM_LOCKED'		=> 'Kategorin är låst',
-	'TOPICS_MARKED'			=> 'Trådarna i denna kategori märktes som lästa.',
 	'NO_UNREAD_POSTS_HOT'		=> 'Olästa inlägg [ Populär ]',
 	'NO_UNREAD_POSTS_LOCKED'		=> 'Olästa inlägg [ Låst ]',
+
+	'POST_FORUM_LOCKED'		=> 'Kategorin är låst',
+
+	'UNREAD_POSTS_HOT'		=> 'Olästa inlägg [ Populär ]',
+	'UNREAD_POSTS_LOCKED'	=> 'Olästa inlägg [ Låst ]',
+
+	'TOPICS_MARKED'			=> 'Trådarna i denna kategori märktes som lästa.',
+
 	'VIEW_FORUM'			=> 'Visa kategori',
 	'VIEW_FORUM_TOPIC'		=> '1 tråd',
 	'VIEW_FORUM_TOPICS'		=> '%d trådar',
