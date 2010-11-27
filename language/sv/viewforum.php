@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* viewforum [Swedish]  (phpBB 3.0.7)
+* viewforum [Swedish]  (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
@@ -56,13 +56,15 @@ $lang = array_merge($lang, array(
 	'ICON_STICKY'			=> 'Notis',
 	'LOGIN_NOTIFY_FORUM'	=> 'Du har underrättats om denna kategori, logga in för att visa den.',
 	'MARK_TOPICS_READ'		=> 'Markera alla trådar som lästa',
-	'NEW_POSTS_HOT'			=> 'Nya inlägg [ Populär ]',
-	'NEW_POSTS_LOCKED'		=> 'Nya inlägg [ Låst ]',
-	'NO_NEW_POSTS_HOT'		=> 'Inga nya inlägg [ Populär ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'Inga nya inlägg [ Låst ]',
+	'NEW_POSTS_HOT'			=> 'Nya inlägg [ Populär ]', // Not used anymore
+	'NEW_POSTS_LOCKED'		=> 'Nya inlägg [ Låst ]', // Not used anymore
+	'NO_NEW_POSTS_HOT'		=> 'Inga nya inlägg [ Populär ]', // Not used anymore
+	'NO_NEW_POSTS_LOCKED'	=> 'Inga nya inlägg [ Låst ]', // Not used anymore
 	'NO_READ_ACCESS'		=> 'Du har inte behörighet att läsa trådar i denna kategori.',
 	'POST_FORUM_LOCKED'		=> 'Kategorin är låst',
 	'TOPICS_MARKED'			=> 'Trådarna i denna kategori märktes som lästa.',
+	'UNREAD_POSTS_HOT'		=> 'Olästa inlägg [ Populär ]',
+	'UNREAD_POSTS_LOCKED'		=> 'Olästa inlägg [ Låst ]',
 	'VIEW_FORUM'			=> 'Visa kategori',
 	'VIEW_FORUM_TOPIC'		=> '1 tråd',
 	'VIEW_FORUM_TOPICS'		=> '%d trådar',
