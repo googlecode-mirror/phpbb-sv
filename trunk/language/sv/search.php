@@ -72,6 +72,7 @@ $lang = array_merge($lang, array(
 	'NO_SEARCH'				=> 'Du har inte tillåtelse att använda söksystemet.',
 	'NO_SEARCH_RESULTS'		=> 'Inga träffar hittades.',
 	'NO_SEARCH_TIME'		=> 'Du kan inte söka just nu. Försök igen om några minuter.',
+	'NO_SEARCH_UNREADS'		=> 'Sökning efter olästa trådar är avslaget på detta forum',
 	'WORD_IN_NO_POST'		=> 'Inga inlägg hittades eftersom ordet <strong>%s</strong> inte finns i något inlägg.',
 	'WORDS_IN_NO_POST'		=> 'Inga inlägg hittades eftersom orden <strong>%s</strong> inte finns i något inlägg.',
 	'POST_CHARACTERS'		=> 'tecknen av inlägget',

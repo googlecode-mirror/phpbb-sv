@@ -10,7 +10,7 @@
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
 * @author (c) 2006-2008 Jonathan Gulbrandsen
 * @author (c) 2008-2010 Peetra
-* Translators: Swedish translation team, working at http://www.phpbb-se.com contact translation team leader at peetra.mammapappa@gmail.com
+* Translators: Swedish translation team, working at http://www.phpbb-se.com contact translation team leader at peetra.mammapappa@gmail.com (Sinom did the changes for 3.0.8)
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
 * Copyright (c) 2006-2010 Swedish translation team
@@ -310,7 +310,7 @@ $lang = array_merge($lang, array(
 	'LAST_VISIT'						=> 'Senaste besöket',
 	'LDAP_NO_LDAP_EXTENSION'			=> 'LDAP inte tillgängligt.',
 	'LDAP_NO_SERVER_CONNECTION'			=> 'Kunde inte ansluta till LDAP-server.',
-	'LDAP_SEARCH_FAILED'				=> 'Ett fel inträffade vid sökning i LDAP-registret.',
+	'LDAP_SEARCH_FAILED'				=> 'Ett fel inträffade i samband med sökningen i LDAP-registret.',
 	'LEGEND'							=> 'Förklaring',
 	'LOCATION'							=> 'Ort',
 	'LOCK_POST'							=> 'Lås inlägg',
@@ -320,7 +320,7 @@ $lang = array_merge($lang, array(
 	'LOGIN_CHECK_PM'					=> 'Logga in för att läsa dina personliga meddelanden.',
 	'LOGIN_CONFIRMATION'				=> 'Verifiering av inloggning',
 	'LOGIN_CONFIRM_EXPLAIN'				=> 'För att förhindra att konton forceras automatiskt så kräver forumet att du skriver in en verifieringskod efter att ha misslyckats med inloggningen ett visst antal gånger. Koden visas i bilden nedan. Om du ser dåligt eller av annat skäl inte kan läsa denna kod, kontakta %sforumadministratören%s.',	// Oanvänd
-	'LOGIN_ERROR_ATTEMPTS'				=> 'Du har överskridit antalet tillåtna inloggningsförsök. Du måste nu svara på CAPTCHA-frågan nedan utöver ditt användarnamn och lösenord.',
+	'LOGIN_ERROR_ATTEMPTS'				=> 'Du har överskridit antalet tillåtna inloggningsförsök. För att försäkra oss om att du är människa bör du ange användarnamn, lösenord och dessutom  svara på CAPTCHA-frågan.',
 	'LOGIN_ERROR_EXTERNAL_AUTH_APACHE'	=> 'Du har inte godkänts av Apache.',
 	'LOGIN_ERROR_PASSWORD'				=> 'Du angav ett felaktigt lösenord. Kontrollera ditt lösenord och försök igen. Kontakta %sforumadministratören%s om problemet kvarstår.',
  	'LOGIN_ERROR_PASSWORD_CONVERT'		=> 'Det gick inte att konvertera ditt lösenord när forumets programvara uppdaterades. %sBegär ett nytt lösenord%s. Kontakta %sforumadministratören%s om problemet kvarstår.',
@@ -362,8 +362,8 @@ $lang = array_merge($lang, array(
 	'NEW_MESSAGES'				=> 'Nya meddelanden',
 	'NEW_PM'					=> '<strong>%d</strong> nytt meddelande',
 	'NEW_PMS'					=> '<strong>%d</strong> nya meddelanden',
-	'NEW_POST'					=> 'Nytt inlägg',	// Används inte längre
-	'NEW_POSTS'					=> 'Nya inlägg',	// Används inte längre
+	'NEW_POST'					=> 'Nytt inlägg',	// Not used anymore längre
+	'NEW_POSTS'					=> 'Nya inlägg',	// Not used anymore längre
 	'NEXT'						=> 'Nästa',		// Used in pagination
 	'NEXT_STEP'					=> 'Nästa',
 	'NEVER'						=> 'Aldrig',
@@ -396,7 +396,7 @@ $lang = array_merge($lang, array(
 	'NO_MODERATORS'				=> 'Det finns inga moderatorer.',
 	'NO_NEW_MESSAGES'			=> 'Inga nya meddelanden',
 	'NO_NEW_PM'					=> 'Inga nya meddelanden',
-	'NO_NEW_POSTS'				=> 'Inga nya inlägg',	// Används inte längre
+	'NO_NEW_POSTS'				=> 'Inga nya inlägg',	// Not used anymore
 	'NO_ONLINE_USERS'			=> 'Inga registrerade användare',
 	'NO_POSTS'					=> 'Inga inlägg',
 	'NO_POSTS_TIME_FRAME'		=> 'Inga inlägg finns i denna tråd inom den valda tidsramen.',
@@ -580,7 +580,7 @@ $lang = array_merge($lang, array(
 	'THE_TEAM'			=> 'Teamet',
 	'TIME'				=> 'Tid',
 	'TOO_LARGE'			=> 'Värdet du angav är för stort.',
-	'TOO_LARGE_MAX_RECIPIENTS'		=> 'Värdet för <strong>Maximala antalet för tillåtna mottagare per privat meddelande</strong> du angav är för stort.',
+	'TOO_LARGE_MAX_RECIPIENTS'		=> 'Värdet för <strong>maximalt antal tillåtna mottagare per privat meddelande</strong> överskrider det tillåtna.',
 	'TOO_LONG'						=> 'Värdet du angav är för långt.',
 	'TOO_LONG_AIM'					=> 'Skärmnamnet du angav är för långt.',
 	'TOO_LONG_CONFIRM_CODE'			=> 'Verifieringskoden du angav är för lång.',
@@ -619,7 +619,7 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_WEBSITE'				=> 'Webbplatsadressen du angav är för kort.',
 	'TOO_SHORT_YIM'					=> 'Yahoo! Messenger-namnet du angav är för kort.',
 	'TOO_SMALL'						=> 'Värdet du angav är för litet.',
-	'TOO_SMALL_MAX_RECIPIENTS'		=> 'Värdet för <strong>Maximala antalet för tillåtna mottagare per privat meddelande</strong> du angav är för litet.',
+	'TOO_SMALL_MAX_RECIPIENTS'		=> 'Värdet för <strong>maximalt antal tillåtna mottagare per privat meddelande</strong> underskrider det tillåtna.',
 	'TOPIC'				=> 'Tråd',
 	'TOPICS'			=> 'Trådar',
 	'TOPICS_UNAPPROVED'	=> 'Minste en tråd i denna kategori är inte godkänd.',
