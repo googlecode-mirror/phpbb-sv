@@ -580,6 +580,21 @@ $lang = array_merge($lang, array(
 
 // Default database schema entries...
 $lang = array_merge($lang, array(
+	'CONFIG_BOARD_EMAIL_SIG'		=> 'Hälsningar forumledningen',
+	'CONFIG_SITE_DESC'				=> 'En kort text som beskriver ditt forum',
+	'CONFIG_SITENAME'				=> 'dindomän.com',
+
+	'DEFAULT_INSTALL_POST'			=> 'Detta är ett exempelinlägg i din installation av phpBB3. Allting verkar fungera. Du kan ta bort detta inlägg om du vill och fortsätta konfigurera ditt forum. Under installationen så skapades din första huvudkategori och kategori och tilldelades en lämplig uppsättning behörigheter för de fördefinierade användargrupperna administratörer, robotar, globala moderatorer, gäster, registrerade användare och registrerade COPPA-användare. Om du väljer att ta bort din första huvudkategori och din första kategori, glöm inte att tilldela behörigheter till alla dessa användargrupper för alla nya huvudkategorier och kategorier du skapar. [b]Det är rekommenderat att byta namn på din första huvudkategori och din första kategori och kopiera behörigheter[/b] från dessa när du skapar nya huvudkategorier och kategorier. Ha det kul!',
+
+	'EXT_GROUP_ARCHIVES'			=> 'Arkiv',
+	'EXT_GROUP_DOCUMENTS'			=> 'Dokument',
+	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Nerladdningsbara filer',
+	'EXT_GROUP_FLASH_FILES'			=> 'Flash-filer',
+	'EXT_GROUP_IMAGES'				=> 'Bilder',
+	'EXT_GROUP_PLAIN_TEXT'			=> 'Oformaterad text',
+	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime Media',
+	'EXT_GROUP_REAL_MEDIA'			=> 'Real Media',
+	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
 
 	'FORUMS_FIRST_CATEGORY'			=> 'Din första huvudkategori',
 	'FORUMS_TEST_FORUM_DESC'		=> 'Beskrivning av din första kategori.',
