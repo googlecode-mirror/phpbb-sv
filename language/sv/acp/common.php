@@ -8,7 +8,8 @@
 * @copyright (c) 2006 phpBB Group, modified and translated by Swedish translation team
 * @source file is copyright (c) 2005 phpBB Group, modified and translated by Swedish translation team
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-* @author (c) 2006-2008 Jonathan Gulbrandsen, 2008-2009 Peetra
+* @author 2006-2008 Jonathan Gulbrandsen
+* @author 2008-2011 Peetra
 * Translators: Swedish translation team, working at http://www.phpbb-se.com Contact team leader at peetra.mammapappa@gmail.com
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
@@ -586,7 +587,7 @@ $lang = array_merge($lang, array(
 	'LOG_USERS_APPROVED'	=> '<strong>Användare godkändes till användargrupp</strong> %1$s<br />» %2$s',
 	'LOG_USERS_PENDING'		=> '<strong>Användare ansökte om medlemskap i användargrupp “%1$s” och väntar på att bli godkänd</strong><br />» %2$s',
 
-	'LOG_IMAGE_GENERATION_ERROR'	=> '<strong>Ett fel uppstod då en avbild skulle skapas</strong><br />» Fel i %1$s på rad %2$s: %3$s',
+	'LOG_IMAGE_GENERATION_ERROR'	=> '<strong>Ett fel uppstod då en bild skulle skapas</strong><br />» Fel i %1$s på rad %2$s: %3$s',
 
 	'LOG_IMAGESET_ADD_DB'			=> '<strong>Lade till nytt bildpaket till databasen</strong><br />» %s',
 	'LOG_IMAGESET_ADD_FS'			=> '<strong>Lade till nytt bildpaket till filsystemet</strong><br />» %s',
