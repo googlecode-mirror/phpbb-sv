@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* ucp [Swedish] (phpBB 3.0.7)
+* ucp [Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
@@ -383,7 +383,7 @@ $lang = array_merge($lang, array(
 	'RENAME'							=> 'Byt namn',
 	'RENAME_FOLDER'						=> 'Byt namn på mappen',
 	'REPLIED_MESSAGE'					=> 'Besvarat meddelande',
-	'REPLY_TO_ALL'						=> 'Svara åt avsändaren och alla mottagare.',
+	'REPLY_TO_ALL'						=> 'Svara alla.',
 	'REPORT_PM'							=> 'Rapportera personligt meddelande',
 	'RESIGN_SELECTED'					=> 'Lämna vald grupp',
 	'RETURN_FOLDER'						=> '%1$sÅtergå till föregående mapp%2$s',
