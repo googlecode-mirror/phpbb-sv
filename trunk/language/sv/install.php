@@ -468,7 +468,7 @@ $lang = array_merge($lang, array(
 	'MERGE_NEW_FILE_OPTION'		=> 'Sammanfoga modifikationer (Ta bort modifierad kod i block med konflikter)',
 	'MERGE_SELECT_ERROR'		=> 'Metod för att sammanfoga filkonflikter har inte valts korrekt.',
 	'MERGING_FILES'				=> 'Sammanfogar skillnader',
-	'MERGING_FILES_EXPLAIN'		=> 'Samlar för närvarande in de sista filändringarna.<br /><br />Vänta tills phpBB har har slutfört alla operationer på ändrade filer.',
+	'MERGING_FILES_EXPLAIN'		=> 'Samlar för närvarande in de sista filändringarna.<br /><br />Vänta tills phpBB har slutfört alla operationer på ändrade filer.',
 
 	'NEW_FILE'						=> 'Slut på konflikten',
 	'NEW_USERNAME'					=> 'Nytt användarnamn',
