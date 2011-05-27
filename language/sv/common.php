@@ -10,7 +10,7 @@
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
 * @author (c) 2006-2008 Jonathan Gulbrandsen
 * @author (c) 2008-2010 Peetra
-* Translators: Swedish translation team, working at http://www.phpbb-se.com contact translation team leader at peetra.mammapappa@gmail.com (Sinom did the changes for 3.0.8)
+* Translators: Swedish translation team, working at http://www.phpbb-se.com contact translation team leader at peetra.mammapappa@gmail.com Sinom helps a lot!
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
 * Copyright (c) 2006-2010 Swedish translation team
@@ -670,7 +670,7 @@ $lang = array_merge($lang, array(
 	'USER_POSTS'			=> '%d inlägg',
 	'USERS'					=> 'Användare',
 	'USE_PERMISSIONS'		=> 'Testa användarens behörigheter',
-	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Tyvärr har du inte tillåtelse att använda denna funktion.We are sorry, but you are not authorised to use this feature. Du är kanske nyregistrerad och förväntas att delta mer före du kan använda denna funktion.',
+	'USER_NEW_PERMISSION_DISALLOWED'	=> 'Tyvärr har du inte tillåtelse att använda denna funktion. Du är kanske nyregistrerad och förväntas att delta mer före du kan använda denna funktion.',
 
 	'VARIANT_DATE_SEPARATOR'	=> ' / ',	// Used in date format dropdown, eg: "Today, 13:37 / 01 Jan 2008, 13:37" ... to join a relative date with calendar date
 	'VIEWED'					=> 'Visad',

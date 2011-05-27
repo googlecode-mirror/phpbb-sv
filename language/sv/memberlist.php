@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* memberlist [Swedish] (phpBB 3.0.7)
+* memberlist [Swedish] (phpBB 3.0.8)
 *
 * @package language
 * @version $Id$
@@ -151,7 +151,7 @@ $lang = array_merge($lang, array(
 	'USER_BAN'				=> 'Bannlys',
 	'USER_FORUM'			=> 'Användarstatistik',
 	'USER_LAST_REMINDED'	=> array(
-		0		=> 'Ingen påmionnelse har säönts',
+		0		=> 'Ingen påminnelse har sänts',
 		1		=> '%1$d påminnelse sänd<br />» %2$s',
 		2		=> '%1$d påminnelser sända<br />» %2$s',
 	),
