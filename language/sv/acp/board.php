@@ -341,7 +341,7 @@ $lang = array_merge($lang, array(
 	'CONFIGURE'								=> 'Ställ in',
 	'CAPTCHA_NO_OPTIONS'					=> 'Det här tillägget har inga inställningar.',
 
-	'VISUAL_CONFIRM_REFRESH'				=> 'Tillåt användaren uppdatera antispam-uppgiften.',
+	'VISUAL_CONFIRM_REFRESH'				=> 'Tillåt användaren uppdatera antispam-uppgiften',
 	'VISUAL_CONFIRM_REFRESH_EXPLAIN'		=> 'Användaren kan be om en ny uppgift, om man inte kan lösa den första. Detta är inte aktiverat för alla tillägg',
 	'VISUAL_CONFIRM_POST'					=> 'Aktivera åtgärder mot spambotar för inlägg gjorda av gäster',
 	'VISUAL_CONFIRM_POST_EXPLAIN'			=> 'Kräver att gästanvändare på forumet löser antispam-uppgiften för att få skicka ett inlägg.',
