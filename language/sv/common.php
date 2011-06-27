@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* common [Swedish] (phpBB 3.0.8)
+* common [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
@@ -56,9 +56,9 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'   => 'Swedish translation by <a href="http://www.phpbb-se.com/forum/viewtopic.php?t=6096">Peetra &amp; phpBB Sweden</a> &copy; 2006-2010',
+	'TRANSLATION_INFO'   => 'Swedish translation by <a href="http://www.phpbb-se.com/forum/viewtopic.php?t=6096">Peetra &amp; phpBB Sweden</a> &copy; 2006-2011',
 	'DIRECTION'			=> 'ltr',
-	'DATE_FORMAT'		=> '|d M Y|',// 01 Jan 2008 (with Relative days enabled)
+	'DATE_FORMAT'		=> '|d M Y|',// 01 Jan 2011 (with Relative days enabled)
 	'USER_LANG'			=> 'sv',
 	'1_DAY'			=> '1 dag',
 	'1_MONTH'		=> '1 månad',
@@ -206,7 +206,7 @@ $lang = array_merge($lang, array(
 	'FORM_INVALID'			=> 'Det skickade formuläret var felaktigt. Försök skicka det igen.',
 	'FORUM'					=> 'Kategori',
 	'FORUMS'				=> 'Kategorier',
-	'FORUMS_MARKED'			=> 'Alla kategorier märktes som lästa.',
+	'FORUMS_MARKED'			=> 'Alla valda kategorier märktes som lästa.',
 	'FORUM_CAT'				=> 'Huvudkategori',
 	'FORUM_INDEX'			=> 'Forumindex',
 	'FORUM_LINK'			=> 'Kategorilänk',
@@ -337,13 +337,14 @@ $lang = array_merge($lang, array(
 	'MARK'					=> 'Markera',
 	'MARK_ALL'				=> 'Markera alla',
 	'MARK_FORUMS_READ'		=> 'Markera alla kategorier som lästa',
+	'MARK_SUBFORUMS_READ'	=> 'Markera alla underkategorier som lästa',
 	'MB'					=> 'MB',
 	'MIB'					=> 'MiB',
 	'MCP'					=> 'Moderationspanel',
 	'MEMBERLIST'			=> 'Medlemmar',
 	'MEMBERLIST_EXPLAIN'	=> 'Visa en fullständig lista över alla medlemmar',
 	'MERGE'					=> 'Sammanfoga',
-	'MERGE_POSTS'			=> 'Sammanfoga trådar',
+	'MERGE_POSTS'			=> 'Flytta trådar',
 	'MERGE_TOPIC'			=> 'Sammanfoga tråd',
 	'MESSAGE'				=> 'Meddelande',
 	'MESSAGES'				=> 'Meddelanden',
@@ -542,6 +543,7 @@ $lang = array_merge($lang, array(
 	'SEARCH_TOPIC'				=> 'Sök i denna tråd…',
 	'SEARCH_UNANSWERED'			=> 'Visa obesvarade inlägg',
 	'SEARCH_UNREAD'				=> 'Visa olästa inlägg',
+	'SEARCH_USER_POSTS'			=> 'Visa användarens inlägg',
 	'SECONDS'					=> 'sekunder',
 	'SELECT'					=> 'Välj',
 	'SELECT_ALL_CODE'			=> 'Markera allt',

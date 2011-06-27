@@ -1,14 +1,14 @@
 <?php
 /** 
 *
-* acp_posting [Swedish] (phpBB 3.0.7)
+* acp_posting [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
 * @copyright (c) 2006 phpBB Group, modified and translated by Swedish translation team
 * @source file is copyright (c) 2005 phpBB Group, modified and translated by Swedish translation team
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-* @author (c) 2006-2008 Jonathan Gulbrandsen 
+* @author (c) 2006-2008 Jonathan Gulbrandsen, 2008-2011 Peetra
 * Translators: Swedish translation team, working at http://www.phpbb-se.com Contact team leader at peetra.mammapappa@gmail.com 
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
@@ -183,6 +183,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_EDIT'				=> 'Redigera smilie',
 	'SMILIE_NO_CODE'			=> 'Smilien “%s” ignorerades, eftersom ingen kod angavs.',
 	'SMILIE_NO_EMOTION'			=> 'Smilien “%s” ignorerades, eftersom inget humör angavs.',
+	'SMILIE_NO_FILE'			=> 'Smilien “%s” ignorerades, eftersom filen inte finns.',
 	'SMILIES_NONE_EDITED'		=> 'Inga smilies uppdaterades.',
 	'SMILIES_ONE_EDITED'		=> 'Smilie uppdaterades.',
 	'SMILIES_EDITED'			=> 'Smilies uppdaterades.',
@@ -245,13 +246,13 @@ $lang = array_merge($lang, array(
 
 // Disallow Usernames
 $lang = array_merge($lang, array(
-	'ACP_DISALLOW_EXPLAIN'	=> 'Här kan du kontrollera användarnamn som inte får användas. Otillåtna användarnamn kan innehålla ett jokertecken (*). Observera att du inte kan ange några användarnamn som redan registrerats, du måste först ta bort det namnet och sedan göra det otillåtet.',
+	'ACP_DISALLOW_EXPLAIN'	=> 'Här kan du kontrollera användarnamn som inte får användas. Otillåtna användarnamn kan innehålla ett jokertecken (*).',
 	'ADD_DISALLOW_EXPLAIN'	=> 'Du kan förbjuda användarnamn med jokertecknet * för att matcha vilket tecken som helst.',
 	'ADD_DISALLOW_TITLE'	=> 'Lägg till ett otillåtet användarnamn',
 
 	'DELETE_DISALLOW_EXPLAIN'	=> 'Du kan ta bort ett otillåtet användarnamn genom att välja användarnamnet från denna lista och klicka på skicka.',
 	'DELETE_DISALLOW_TITLE'		=> 'Ta bort ett otillåtet användarnamn',
-	'DISALLOWED_ALREADY'		=> 'Namnet du angav kunde inte förbjudas. Antingen finns det redan i listan, eller så finns det i ordcensurlistan, eller så finns det ett användarnamn som matchar det.',
+	'DISALLOWED_ALREADY'		=> 'Namnet du angav är redan förbjudet.',
 	'DISALLOWED_DELETED'		=> 'Det otillåtna användarnamnet togs bort.',
 	'DISALLOW_SUCCESSFUL'		=> 'Det otillåtna användarnamnet lades till.',
 

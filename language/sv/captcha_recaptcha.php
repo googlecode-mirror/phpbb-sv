@@ -1,18 +1,18 @@
 <?php
 /**
 *
-* capcha_recaptcha[Swedish] (phpBB 3.0.8)
+* capcha_recaptcha[Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
 * @copyright (c) 2006 phpBB Group, modified and translated by Swedish translation team
 * @source file is copyright (c) 2005 phpBB Group, modified and translated by Swedish translation team
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-* @author (c) 2008-2010 Peetra
+* @author (c) 2008-2011 Peetra
 * Translators: Swedish translation team, working at http://www.phpbb-se.com contact translation team leader at peetra.mammapappa@gmail.com
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
-* Copyright (c) 2006-2010 Swedish translation team
+* Copyright (c) 2006-2011 Swedish translation team
 *
 * The Swedish language package for phpBB 3.0.x is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License as published by the Free Software
@@ -53,16 +53,16 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RECAPTCHA_LANG'				=> 'en',
-	'RECAPTCHA_NOT_AVAILABLE'		=> 'För att kunna använda reCaptcha, så bör du skapa ett konto på <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_NOT_AVAILABLE'		=> 'Du behöver ett konto på <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a> för att kunna använda reCaptcha.',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
 	'RECAPTCHA_INCORRECT'			=> 'Den visuella konfirmationskoden som du angav är felaktig',
 
 	'RECAPTCHA_PUBLIC'				=> 'Public reCaptcha key',
-	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Din publika reCaptcha nyckel. Nycklar kan erhållas på <a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Din publika reCaptcha nyckel. Nycklar kan erhållas på <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>.',
 	'RECAPTCHA_PRIVATE'				=> 'Private reCaptcha key',
-	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Din privata reCaptcha nyckel. Nycklar kan erhållas på<a href="http://recaptcha.net">reCaptcha.net</a>.',
+	'RECAPTCHA_PRIVATE_EXPLAIN'		=> 'Din privata reCaptcha nyckel. Nycklar kan erhållas på <a href="http://www.google.com/recaptcha">www.google.com/recaptcha</a>',
 
-	'RECAPTCHA_EXPLAIN'				=> 'För att förhindra automatiska registreringar så kräver forumet att du här skriver in en verifieringskod. Koden visas i bilden nedan.',
+	'RECAPTCHA_EXPLAIN'				=> 'För att förhindra automatiska registreringar så kräver forumet att du skriver in en verifieringskod. Koden visas i bilden nedan.',
 ));
 
 ?>
