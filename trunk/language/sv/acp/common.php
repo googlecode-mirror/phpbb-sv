@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp common [Swedish] (phpBB 3.0.8)
+* acp common [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$

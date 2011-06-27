@@ -1,18 +1,18 @@
 <?php
 /** 
 *
-* search [Swedish] (phpBB 3.0.7)
+* search [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
 * @copyright (c) 2006 phpBB Group, modified and translated by Swedish translation team
 * @source file is copyright (c) 2005 phpBB Group, modified and translated by Swedish translation team
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-* @author (c) 2006-2008 Jonathan Gulbrandsen 
+* @author (c) 2006-2008 Jonathan Gulbrandsen, 2008-2011 Peetra
 * Translators: Swedish translation team, working at http://www.phpbb-se.com Contact team leader at peetra.mammapappa@gmail.com
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
-* Copyright (c) 2006-2010 Swedish translation team
+* Copyright (c) 2006-2011 Swedish translation team
 *
 * The Swedish language package for phpBB 3.0.x is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License as published by the Free Software
@@ -55,16 +55,24 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ALL_AVAILABLE'			=> 'Alla tillgängliga',
 	'ALL_RESULTS'			=> 'Visa alla resultat',
+
 	'DISPLAY_RESULTS'		=> 'Visa resultat som',
+
 	'FOUND_SEARCH_MATCH'		=> '%d träff',
 	'FOUND_SEARCH_MATCHES'		=> '%d träffar',
 	'FOUND_MORE_SEARCH_MATCHES'	=> 'Fler än %d träffar',
+
 	'GLOBAL'				=> 'Globalt anslag',
+
 	'IGNORED_TERMS'			=> 'ignorerat',
 	'IGNORED_TERMS_EXPLAIN'	=> 'Följande ord i din sökfråga ignorerades eftersom de är för vanliga: <strong>%s</strong>.',
+
 	'JUMP_TO_POST'			=> 'Gå till inlägg',
-	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Forumet kräver att du är registrerad och loggar in för att visa dina egna inlägg.',
-	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Forumet kräver att du är registrerad och loggar in för att visa dina olästa inlägg.',
+
+	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Forumet kräver att du är registrerad och inloggad in för att visa dina egna inlägg.',
+	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Forumet kräver att du är registrerad och inloggad för att visa dina olästa inlägg.',
+	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'Forumet kräver att du är registrerad och inloggad for att visa nya inlägg sedan ditt senaste besök.',
+	
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Du har angett för många olika nyckelord. Var god försök på nytt med maximalt %1$d ord.',
 
 	'NO_KEYWORDS'			=> 'Du måste ange minst ett ord att söka efter. Varje ord måste bestå av minst %d tecken och inte mer än %d tecken, exklusive jokertecken.',
@@ -73,9 +81,9 @@ $lang = array_merge($lang, array(
 	'NO_SEARCH_RESULTS'		=> 'Inga träffar hittades.',
 	'NO_SEARCH_TIME'		=> 'Du kan inte söka just nu. Försök igen om några minuter.',
 	'NO_SEARCH_UNREADS'		=> 'Sökning efter olästa trådar är avslaget på detta forum',
-	'WORD_IN_NO_POST'		=> 'Inga inlägg hittades eftersom ordet <strong>%s</strong> inte finns i något inlägg.',
-	'WORDS_IN_NO_POST'		=> 'Inga inlägg hittades eftersom orden <strong>%s</strong> inte finns i något inlägg.',
+
 	'POST_CHARACTERS'		=> 'tecknen av inlägget',
+
 	'RECENT_SEARCHES'		=> 'Senaste sökningarna',
 	'RESULT_DAYS'			=> 'Begränsa resultaten till inlägg nyare än',
 	'RESULT_SORT'			=> 'Sortera resultat efter',
@@ -106,7 +114,11 @@ $lang = array_merge($lang, array(
 	'SORT_FORUM'				=> 'Kategori',
 	'SORT_POST_SUBJECT'			=> 'Inläggämne',
 	'SORT_TIME'					=> 'Datum',
+
 	'TOO_FEW_AUTHOR_CHARS'	=> 'Du måste ange minst %d tecken av författarens namn.',
+
+	'WORD_IN_NO_POST'		=> 'Inga inlägg hittades eftersom ordet <strong>%s</strong> inte finns i något inlägg.',
+	'WORDS_IN_NO_POST'		=> 'Inga inlägg hittades eftersom orden <strong>%s</strong> inte finns i något inlägg.',
 ));
 
 ?>

@@ -1,14 +1,14 @@
 <?php
 /** 
 *
-* acp_styles [Swedish] (phpBB 3.0.8)
+* acp_styles [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
 * @copyright (c) 2006 phpBB Group, modified and translated by Swedish translation team
 * @source file is copyright (c) 2005 phpBB Group, modified and translated by Swedish translation team
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-* @author (c) 2006-2008 Jonathan Gulbrandsen 
+* @author (c) 2006-2008 Jonathan Gulbrandsen, 2008-2011 Peetra
 * Translators: Swedish translation team, working at http://www.phpbb-se.com Contact team leader at peetra.mammapappa@gmail.com 
 *
 * This file is part of the Swedish language package for phpBB 3.0.x.
@@ -95,7 +95,7 @@ $lang = array_merge($lang, array(
 	'DELETE_IMAGESET'			=> 'Ta bort bildpaket',
 	'DELETE_IMAGESET_EXPLAIN'	=> 'Här kan du ta bort det valda bildpaketet från databasen. Kom ihåg att det inte går att ångra. När bildpaketet har raderats är det borta för alltid. Det är rekommenderat att du först exporterar ditt bildpaket för möjlig framtida användning.',
 	'DELETE_STYLE'				=> 'Ta bort stil',
-	'DELETE_STYLE_EXPLAIN'		=> 'Här kan du ta bort den valda stilen. Du kan inte ta bort alla stilelement härifrån. De måste tas bort individuellt från filsystemet. Var försiktig när du tar bort stilar, det går inte att ångra.',
+	'DELETE_STYLE_EXPLAIN'		=> 'Här kan du ta bort den valda stilen. Var försiktig när du tar bort stilar, det går inte att ångra.',
 	'DELETE_TEMPLATE'			=> 'Ta bort mall',
 	'DELETE_TEMPLATE_EXPLAIN'	=> 'Här kan du ta bort den valda malluppsättningen från databasen. Kom ihåg att det inte går att ångra. När mallarna raderats är de borta för alltid. Det är rekommenderat att du först exporterar din malluppsättning för möjlig framtida användning.',
 	'DELETE_THEME'				=> 'Ta bort tema',
@@ -301,9 +301,13 @@ $lang = array_merge($lang, array(
 	'INSTALLED_TEMPLATE'		=> 'Installerade mallar',
 	'INSTALLED_THEME'			=> 'Installerade teman',
 
+	'KEEP_IMAGESET'				=> 'Behåll bildpaket för “%s”',
+	'KEEP_TEMPLATE'				=> 'Behåll mallen för “%s”',
+	'KEEP_THEME'				=> 'Behåll temat för “%s”',
+	
 	'LINE_SPACING'				=> 'Linjeavstånd',
 	'LOCALISED_IMAGES'			=> 'Översatt',
-  'LOCATION_DISABLED_EXPLAIN'    => 'Den här inställningen är ärvd och kan inte ändras.',
+	'LOCATION_DISABLED_EXPLAIN'    => 'Den här inställningen är ärvd och kan inte ändras.',
 
 	'NO_CLASS'					=> 'Kunde inte hitta klass i stilmall.',
 	'NO_IMAGESET'				=> 'Kunde inte hitta bildpaket på filsystemet.',
@@ -337,6 +341,7 @@ $lang = array_merge($lang, array(
 	'REPLACE_TEMPLATE_EXPLAIN'	=> 'Denna mall kommer att ersätta den som du tar bort i alla stilar som använder den.',
 	'REPLACE_THEME'				=> 'Ersätt tema med',
 	'REPLACE_THEME_EXPLAIN'		=> 'Detta tema kommer att ersätta det som du tar bort i alla stilar som använder det.',
+	'REPLACE_WITH_OPTION'		=> 'Ersätt med “%s”',
 	'REQUIRES_IMAGESET'			=> 'Denna stil kräver att bildpaketet %s är installerat.',
 	'REQUIRES_TEMPLATE'			=> 'Denna stil kräver att malluppsättningen %s är installerad.',
 	'REQUIRES_THEME'			=> 'Denna stil kräver att temat %s är installerat.',

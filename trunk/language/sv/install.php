@@ -1,7 +1,7 @@
 <?php
 /** 
 *
-* install [Swedish] (phpBB 3.0.8)
+* install [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
@@ -144,7 +144,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Fel under utförande av <var>query_first</var>, %s (“%s”).',
 	'DB_ERR_SELECT'				=> 'Fel under körning av <code>SELECT</code> fråga.',
 	'DB_HOST'					=> 'Värdnamn för databasserver eller DSN',
-	'DB_HOST_EXPLAIN'			=> 'DSN står för Data Source Name och är endast relevant för ODBC installationer. För PostgreSQL; Använd localhost för att ansluta till den lokala servern via UNIX use  to connect to the local server med UNIX domain socket och 127.0.0.1 för att ansluta med TCP.',
+	'DB_HOST_EXPLAIN'			=> 'DSN står för Data Source Name och är endast relevant för ODBC installationer. För PostgreSQL; Använd localhost för att ansluta till den lokala servern via UNIX  domain socket och 127.0.0.1 för att ansluta med TCP. För SQLite anger du hela sökvägen till din databasfil.',
 	'DB_NAME'					=> 'Databasnamn',
 	'DB_PASSWORD'				=> 'Databaslösenord',
 	'DB_PORT'					=> 'Databasserverport',
@@ -204,7 +204,7 @@ $lang = array_merge($lang, array(
 	'INSTALL_CONGRATS'			=> 'Grattis!',
 	'INSTALL_CONGRATS_EXPLAIN'	=> '
 		<p>Du har nu installerat phpBB %1$s. Var god, fortsätt genom att välja ett av följande alernativ:</p>
-		<h2>Konvertera ett existerande forum till phpBB3</h2>
+		<h2>Konvertera ett existerande forum till phpBB3.</h2>
 		<p>phpBB Unified Convertor Framework stödjer konvertering av phpBB 2.0.x och andra forumsystem till phpBB3. Om du har ett existerande forum som du vill konvertera, <a href="%2$s">gå vidare till konverteraren</a>.</p>
 		<h2>Gå live med ditt phpBB3!</h2>
 		<p>Klicka på knappen nedan och du kommer att tas till ett formulär, i administrationspanelen för ditt nya forum, som tillåter dig att skicka statistik till phpBB. Vi uppskattar den hjälp du ger genom att fylla i dessa uppgifter. Ta dig sedan tid att utforska alla tillgängliga alternativ och inställningar. Kom ihåg att hjälp finns att få online i <a href="http://www.phpbb.com/support/documentation/3.0/">dokumentationen</a>, på det <a href="http://www.phpbb.com/community/viewforum.php?f=46">engelska supportforumet</a> och på det <a href="http://www.phpbb-se.com/forum/index.php">svenska supportforumet</a> Se även <a href="%3$s">README</a> för mer information.</p><p><strong>Ta nu bort, byt namn på eller flytta install-katalogen innan du använder ditt forum. Om denna katalog finns kvar kommer endast administrationspanelen att vara tillgänglig.</strong></p>',
@@ -312,7 +312,7 @@ $lang = array_merge($lang, array(
 	'PHP_SETTINGS'					=> 'PHP-version och inställningar',
 	'PHP_SETTINGS_EXPLAIN'			=> '<strong>Obligatoriskt</strong> - Du måste köra minst version 4.3.3 av PHP för att installera phpBB. Om <var>safe mode</var> visas nedan så körs din PHP-installation med denna inställning. Detta kommer att resultera i begränsningar på fjärradministration och liknande funktioner.',
 	'PHP_URL_FOPEN_SUPPORT'			=> 'PHP-inställningen <var>allow_url_fopen</var> är aktiverad',
-	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>Frivilligt</strong> - Denna inställning är frivillig, men vissa phpBB-funktioner, såsom fjärrvisningsbilder, kommer inte att fungera korrekt utan den. ',
+	'PHP_URL_FOPEN_SUPPORT_EXPLAIN'	=> '<strong>Frivilligt</strong> - Denna inställning är frivillig, men vissa phpBB-funktioner, såsom fjärrvisningsbilder, kommer inte att fungera korrekt utan den.',
 	'PHP_VERSION_REQD'				=> 'PHP-version >= 4.3.3',
 	'POST_ID'						=> 'Inläggs-ID',
 	'PREFIX_FOUND'					=> 'En analys av dina tabeller visar att du har en giltig installation som använder <strong>%s</strong> som tabellprefix.',
@@ -340,7 +340,7 @@ $lang = array_merge($lang, array(
 	'STAGE_ADVANCED_EXPLAIN'	=> 'Inställningarna på denna sida behövs endast om du vet att du behöver ställa in någonting annorlunda än i normala inställningar. Om du är osäker, fortsätt till nästa sida. Dessa inställningar kan ändras senare i administrationspanelen.',
 	'STAGE_CONFIG_FILE'			=> 'Konfigurationsfil',
 	'STAGE_CREATE_TABLE'		=> 'Skapar databastabeller',
-	'STAGE_CREATE_TABLE_EXPLAIN'	=> 'Databastabellerna som används av phpBB 3.0 har skapats och fyllts med lite inledande data. Fortsätt till nästa sida för att slutföra installationen av phpBB.',
+	'STAGE_CREATE_TABLE_EXPLAIN'	=> 'Databastabellerna som används av phpBB3 har skapats och fyllts med lite inledande data. Fortsätt till nästa sida för att slutföra installationen av phpBB.',
 	'STAGE_DATABASE'			=> 'Databasinställningar',
 	'STAGE_FINAL'				=> 'Slutskede',
 	'STAGE_INTRO'				=> 'Introduktion',
@@ -380,7 +380,7 @@ $lang = array_merge($lang, array(
 
 // Updater
 $lang = array_merge($lang, array(
-	'ALL_FILES_UP_TO_DATE'		=> 'Alla filer är av den senaste phpBB versionen. Du bör nu <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">logga in på ditt forum</a> och kontrollera att allt fungerar som det ska. Var god och sänd oss uppdaterad information om din server och forumkonfigurationer via modulen <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">Sänd statitstik</a> i administrationspanelen.<br /><br />Glöm inte att ta bort, byta namn på eller flytta katalogen install!',
+	'ALL_FILES_UP_TO_DATE'		=> 'Alla filer är av den senaste phpBB versionen. Du bör nu <a href="../ucp.php?mode=login">logga in på ditt forum</a> och kontrollera att allt fungerar som det ska. Glöm inte att ta bort, byta namn på eller flytta katalogen install! Var god och sänd oss uppdaterad information om din server och forumkonfigurationer via modulen <a href="../ucp.php?mode=login&amp;redirect=adm/index.php%3Fi=send_statistics%26mode=send_statistics">Sänd statitstik</a> i administrationspanelen.',
 	'ARCHIVE_FILE'				=> 'Källfil inom arkiv',
 
 	'BACK'				=> 'Tillbaka',

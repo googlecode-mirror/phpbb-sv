@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* acp_board [Swedish] (phpBB 3.0.8)
+* acp_board [Swedish] (phpBB 3.0.9)
 *
 * @package language
 * @version $Id$
@@ -172,7 +172,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Om inaktiverat så kommer <code>[FLASH]</code>-BBCodetaggen inaktiveras i inlägg. Annars kontrollerar behörighetssystemet vilka användare som kan använda <code>[FLASH]</code>-BBCodetaggen.',
 
 	'BUMP_INTERVAL'					=> 'Knuffningsintervall',
-	'BUMP_INTERVAL_EXPLAIN'			=> 'Antal minuter, timmar eller dagar mellan det senaste inlägget i en tråd tills det går att knuffa upp den. Sätt till 0 för att inaktivera detta beteende. ',
+	'BUMP_INTERVAL_EXPLAIN'			=> 'Antal minuter, timmar eller dagar mellan det senaste inlägget i en tråd tills det går att knuffa upp den. Sätt till 0 för att inaktivera all knuffning. ',
 	'CHAR_LIMIT'					=> 'Maximalt antal tecken per inlägg',
 	'CHAR_LIMIT_EXPLAIN'			=> 'Det maximala antalet tecken som tillåts för ett inlägg. Sätt till 0 för obegränsat med tecken.',
 	'DELETE_TIME'					=> 'Begränsa borttagningstid.',
@@ -229,15 +229,15 @@ $lang = array_merge($lang, array(
 	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Här kan du ställa in registrerings- och profilrelaterade inställningar.',
 
 	'ACC_ACTIVATION'			=> 'Kontoaktivering',
-	'ACC_ACTIVATION_EXPLAIN'	=> 'Detta avgör om användare har omedelbar åtkomst till forumet eller om verifiering krävs. Du kan också inaktivera nya registreringar helt.',
+	'ACC_ACTIVATION_EXPLAIN'	=> 'Detta avgör om användare har omedelbar åtkomst till forumet eller om verifiering krävs. Du kan också inaktivera nya registreringar helt. Forumets e-post måste vara aktiverat för att man ska kunna använda användar- eller administratörsaktivering.',
 	'NEW_MEMBER_POST_LIMIT'			=> 'Inläggsgräns för ny medlem',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Nya medlemmar läggs automatiskt i den fördefinierade gruppen <em>Nya medlemmar</em> tills de uppnår denna mängd inlägg. Du kan använda denna grupp för att förhindra användning av pm eller granska inlägg före de blir postade i forumet. <strong>Sätt till 0 för att inaktivera detta beteende.</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Ange gruppen Nya medlemmar som standard',
 	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> 'Aktivera detta och definiera antal inlägg för gruppen <em>Nya medlemmar</em>, för att lägga in nya medlemmar i gruppen <em>Nya medlemmar</em> och ange den gruppen som deras standardgrupp. Detta kan vara behändigt om man vill ange en grupptitel eller visningsbild för nya medlemmar.',
 	'ACC_ADMIN'					=> 'Av administratör',
-	'ACC_DISABLE'				=> 'Inaktivera',
-	'ACC_NONE'					=> 'Ingen',
-	'ACC_USER'					=> 'Av användaren',
+	'ACC_DISABLE'				=> 'Inaktivera registrering',
+	'ACC_NONE'					=> 'Ingen (direkt tillgång)',
+	'ACC_USER'					=> 'Av användaren (verifiering via e-post)',
 //	'ACC_USER_ADMIN'			=> 'User + Admin',
 	'ALLOW_EMAIL_REUSE'			=> 'Tillåt återanvändning av e-postadresser',
 	'ALLOW_EMAIL_REUSE_EXPLAIN'	=> 'Olika användare kan registrera sig med samma e-postadress.',
@@ -479,13 +479,20 @@ $lang = array_merge($lang, array(
 	'FORM_TIME_MAX'					=> 'Maximal tid för att skicka in formulär',
 	'FORM_TIME_MAX_EXPLAIN'			=> 'Den tid som en användare har på sig för att skicka in ett formulär. Sätt till -1 för att inaktivera. Observera att ett formulär kan bli ogiltigt om en session förfaller, oavsett denna inställning.',
 	'FORM_SID_GUESTS'				=> 'Bind formulär till gästsessioner',
-	'FORM_SID_GUESTS_EXPLAIN'		=> 'Om aktiverat så kommer den formulärtoken som tilldelas gäster att vara sessions-exklusiv. Detta kan medföra problem med vissa internetleverantörer.',
+	'FORM_SID_GUESTS_EXPLAIN'		=> 'Om aktiverat så kommer det token-ID som tilldelas gästers formulär att vara exklusivt för varje session. Detta kan medföra problem med vissa internetleverantörer.',
 	'FORWARDED_FOR_VALID'			=> 'Kontrollera <var>X_FORWARDED_FOR</var> huvudet',
 	'FORWARDED_FOR_VALID_EXPLAIN'	=> 'Sessioner kommer endast fortsätta om det skickade <var>X_FORWARDED_FOR</var> huvudet är samma som det i tidigare begäran. Bannlysningar kommer också att kontrolleras mot IP-adresser i <var>X_FORWARDED_FOR</var>.',
 	'IP_VALID'						=> 'Kontroll av sessions-IP',
 	'IP_VALID_EXPLAIN'				=> 'Avgör hur mycket av användarens IP som används för att kontrollera en session; <samp>Alla</samp> jämför hela adressen, <samp>A.B.C</samp> de första x.x.x, <samp>A.B</samp> de första x.x, <samp>Ingen</samp> inaktiverar kontroll. För IPv6 adresser jämför <samp>A.B.C</samp> de första 4 blocken och <samp>A.B</samp> de 3 första blocken.',
-	'MAX_LOGIN_ATTEMPTS'			=> 'Maximalt antal inloggningsförsök',
-	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Efter detta antal misslyckade inloggningsförsök så måste användaren bekräfta sin inloggning med en antispam-uppgift.',
+	'IP_LOGIN_LIMIT_MAX'			=> 'Maximalt antal inloggningsförsök per IP-adress',
+	'IP_LOGIN_LIMIT_MAX_EXPLAIN'	=> 'Tröskelvärde för tillåtna inloggningsförsök från samma IP-adress. Då värdet nås utlöses en antispambot-uppgift. Ange 0 för att förhindra uppgiften att utlösas av IP-adresser.',
+	'IP_LOGIN_LIMIT_TIME'			=> 'Tid då inloggningsförsök per IP-adress upphör',
+	'IP_LOGIN_LIMIT_TIME_EXPLAIN'	=> 'Inloggningsförsöken nollställs efter denna period.',
+	'IP_LOGIN_LIMIT_USE_FORWARDED'	=> 'Begränsa inloggningsförsök med <var>X_FORWARDED_FOR</var> huvudet',
+	'IP_LOGIN_LIMIT_USE_FORWARDED_EXPLAIN'	=> 'Istället för att begränsa inloggningsförsök per IP-adress begränsas de med <var>X_FORWARDED_FOR</var> värden. <br /><em><strong>Varning:</strong> Slå på detta endast om du använder en proxy-server som tilldelar <var>X_FORWARDED_FOR</var> pålitliga värden.</em>',
+	'MAX_LOGIN_ATTEMPTS'			=> 'Maximalt antal inloggningsförsök per användarnamn',
+	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'Antal misslyckade inloggningsförsök för ett användarkonto, före antispam-uppgiften utlöses. Ange 0 to prevent the anti-spambot task from being trigger for distinct user accounts.',
+	
 	'NO_IP_VALIDATION'				=> 'Ingen',
 	'NO_REF_VALIDATION'           	=> 'Ingen',
 	'PASSWORD_TYPE'					=> 'Lösenordskomplexitet',
